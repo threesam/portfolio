@@ -5,12 +5,10 @@ export default {
 	fields: [
 		{
 			name: 'title',
-			type: 'string',
-			title: 'Title'
+			type: 'string'
 		},
 		{
 			name: 'slug',
-			title: 'Slug',
 			type: 'slug',
 			options: {
 				source: 'title',
@@ -19,23 +17,16 @@ export default {
 		},
 		{
 			name: 'description',
-			title: 'Description',
 			type: 'text'
 		},
 		{
-			name: 'mainImage',
-			title: 'Main image',
-			type: 'mainImage'
+			name: 'image',
+			type: 'image'
 		},
 		{
-			name: 'href',
-			type: 'url',
-			title: 'Href'
-		},
-		{
-			name: 'repo',
-			type: 'url',
-			title: 'Repo'
+			name: 'links',
+			type: 'array',
+			of: [{ type: 'link' }]
 		},
 		{
 			name: 'order',
@@ -51,7 +42,8 @@ export default {
 		{
 			name: 'tags',
 			title: 'Tags',
-			type: 'tags'
+			type: 'array',
+			of: [{ type: 'string' }]
 		}
 	]
 }

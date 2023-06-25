@@ -7,7 +7,6 @@ export default defineType({
 	fields: [
 		defineField({
 			name: 'title',
-			title: 'Title',
 			type: 'string'
 		}),
 		defineField({
@@ -20,14 +19,16 @@ export default defineType({
 			}
 		}),
 		defineField({
+			name: 'description',
+			type: 'text'
+		}),
+		defineField({
 			name: 'author',
-			title: 'Author',
 			type: 'reference',
 			to: { type: 'author' }
 		}),
 		defineField({
-			name: 'mainImage',
-			title: 'Main image',
+			name: 'image',
 			type: 'image',
 			options: {
 				hotspot: true
@@ -35,7 +36,6 @@ export default defineType({
 		}),
 		defineField({
 			name: 'categories',
-			title: 'Categories',
 			type: 'array',
 			of: [{ type: 'reference', to: { type: 'category' } }]
 		}),
@@ -46,7 +46,6 @@ export default defineType({
 		}),
 		defineField({
 			name: 'body',
-			title: 'Body',
 			type: 'blockContent'
 		})
 	],

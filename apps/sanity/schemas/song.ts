@@ -19,8 +19,8 @@ export default {
 			}
 		},
 		{
-			type: 'mainImage',
-			name: 'mainImage'
+			type: 'image',
+			name: 'image'
 		},
 		{
 			name: 'lyrics',

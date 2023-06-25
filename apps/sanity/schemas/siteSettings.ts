@@ -21,14 +21,8 @@ export default {
 			title: 'Tag Line'
 		},
 		{
-			name: 'mainImage',
-			type: 'mainImage',
-			title: 'Image'
-		},
-		{
-			name: 'tags',
-			title: 'Tags',
-			type: 'tags'
+			name: 'image',
+			type: 'image'
 		},
 		{
 			name: 'author',

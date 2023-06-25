@@ -3,9 +3,9 @@
 	<h1>threesam</h1>
 </section>
 
-<!-- sites -->
+<!-- sounds -->
 <section>
-	<h2>projects</h2>
+	<h2>music</h2>
 </section>
 
 <!-- sees -->
@@ -13,9 +13,9 @@
 	<h2>films</h2>
 </section>
 
-<!-- sounds -->
+<!-- sites -->
 <section>
-	<h2>music</h2>
+	<h2>projects</h2>
 </section>
 
 <!-- contact -->

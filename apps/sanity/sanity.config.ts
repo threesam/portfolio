@@ -1,5 +1,6 @@
 import { defineConfig } from 'sanity'
 import { deskTool } from 'sanity/desk'
+import { iconPicker } from 'sanity-plugin-icon-picker'
 import { media } from 'sanity-plugin-media'
 import { schemaTypes } from './schemas'
 import { visionTool } from '@sanity/vision'
@@ -11,7 +12,7 @@ export default defineConfig({
 	projectId: 'qcht0vh1',
 	dataset: 'production',
 
-	plugins: [deskTool(), media(), visionTool()],
+	plugins: [deskTool(), iconPicker(), media(), visionTool()],
 
 	schema: {
 		types: schemaTypes
