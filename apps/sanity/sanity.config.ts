@@ -1,18 +1,19 @@
-import {defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
-import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemas'
+import { defineConfig } from 'sanity'
+import { deskTool } from 'sanity/desk'
+import { media } from 'sanity-plugin-media'
+import { schemaTypes } from './schemas'
+import { visionTool } from '@sanity/vision'
 
 export default defineConfig({
-  name: 'default',
-  title: 'threesam',
+	name: 'default',
+	title: 'threesam',
 
-  projectId: 'qcht0vh1',
-  dataset: 'production',
+	projectId: 'qcht0vh1',
+	dataset: 'production',
 
-  plugins: [deskTool(), visionTool()],
+	plugins: [deskTool(), media(), visionTool()],
 
-  schema: {
-    types: schemaTypes,
-  },
+	schema: {
+		types: schemaTypes
+	}
 })
