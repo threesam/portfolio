@@ -61,7 +61,6 @@ export async function getAllProjects() {
     ...,
     title,
     description,
-    status,
     "slug": slug.current,
     "image": {
       "src": image.asset->url,
@@ -69,7 +68,6 @@ export async function getAllProjects() {
       "caption": image.caption,
       "color": image.asset->metadata.palette.lightVibrant.background,
     },
-    "posters": posters[].asset->
   }`)
 }
 

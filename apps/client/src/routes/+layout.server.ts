@@ -1,13 +1,13 @@
-import { getSongs } from '$lib/utils/sanity'
+import { getAllProjects } from '$lib/utils/sanity'
 import { error } from '@sveltejs/kit'
 
 export async function load() {
-	const settings = await getSongs()
+	const projects = await getAllProjects()
 
-	if (settings) {
+	if (projects) {
 		return {
 			body: {
-				settings
+				projects
 			}
 		}
 	}

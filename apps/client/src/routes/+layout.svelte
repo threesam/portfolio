@@ -1,10 +1,16 @@
 <script>
-	import '../app.css';
+	import '../app.css'
+	import Footer from '$lib/components/Footer.svelte'
+	import Header from '$lib/components/Header.svelte'
 
-	export let data;
+	export let data
 
-	const { settings } = data.body;
+	const { projects } = data.body
+	console.log('projects: ', projects)
 </script>
 
-<pre>{JSON.stringify({ settings }, null, 2)}</pre>
+<Header />
+
 <slot />
+
+<Footer />
