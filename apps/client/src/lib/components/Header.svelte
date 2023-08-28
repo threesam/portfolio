@@ -7,7 +7,7 @@
 		sounds: '#049786'
 	}
 
-	$: primary = obj.sounds
+	$: primary = obj.sites
 </script>
 
 <header
