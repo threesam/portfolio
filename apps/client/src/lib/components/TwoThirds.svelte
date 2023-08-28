@@ -23,6 +23,11 @@
 	<div
 		class="bg-primary col-span-4 grid place-content-center rounded-md border-2 border-black p-3 px-16 transition-colors duration-300"
 	>
+		<div class="mb-2 flex gap-4">
+			{#each item.tags?.filter((tag) => tag !== 'featured') as tag}
+				<span class="">{tag}</span>
+			{/each}
+		</div>
 		<h1 class="text-dark mb-3 text-4xl">{item.title}</h1>
 		<div class="flex pb-2">
 			{#if item.links?.length}

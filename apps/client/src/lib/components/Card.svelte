@@ -6,6 +6,11 @@
 	class="relative col-span-4 grid aspect-square place-content-center overflow-hidden rounded-md border-2 border-black transition-colors duration-300 first:col-span-4"
 >
 	<div class="text-light absolute bottom-4 left-4 z-20">
+		<div class="mb-2 flex gap-4">
+			{#each item.tags as tag}
+				<span class="">{tag}</span>
+			{/each}
+		</div>
 		<h2 class="text-light text-3xl">{item.title}</h2>
 		<div class="flex items-center pb-2">
 			{#if item.links?.length}
