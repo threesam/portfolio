@@ -5,7 +5,7 @@
 <div
 	class="relative col-span-4 grid aspect-square place-content-center overflow-hidden rounded-md border-2 border-black transition-colors duration-300 first:col-span-4"
 >
-	<div class="text-light absolute bottom-4 left-4 z-20">
+	<div class="text-light absolute bottom-0 left-0 z-20 p-4">
 		<div class="mb-2 flex gap-4">
 			{#each item.tags as tag}
 				<span class="">{tag}</span>
@@ -28,7 +28,7 @@
 				case study
 			</a>
 		</div>
-		<p class="max-w-2xl">
+		<p class="max-w-2xl text-sm">
 			{item.subtitle}
 		</p>
 	</div>
