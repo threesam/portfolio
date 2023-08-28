@@ -3,8 +3,8 @@ module.exports = {
 	theme: {
 		fontFamily: {
 			display: ['Barrio', 'monospace'],
-			sans: ['Montserrat', 'sans-serif'],
-			mono: ['monospace']
+			// sans: ['Montserrat', 'sans-serif'],
+			sans: ['Fira Mono', 'monospace']
 		},
 		extend: {
 			backgroundImage: {

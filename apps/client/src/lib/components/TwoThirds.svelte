@@ -4,12 +4,12 @@
 
 <section class="grid grid-cols-12 gap-4 p-4 pb-0">
 	<div
-		class="relative col-span-8 row-span-1 grid aspect-[4/3] place-content-center overflow-hidden rounded-md border-2 border-black transition-colors duration-300"
+		class="relative col-span-8 row-span-1 grid aspect-video place-content-center overflow-hidden rounded-md border-2 border-black transition-colors duration-300"
 	>
 		<h2
-			class="bg-primary relative z-20 rounded-md border-2 border-black p-16 text-center text-5xl text-black"
+			class="text-primary border-primary relative z-20 rounded-md border-2 bg-black p-16 text-center font-sans text-5xl"
 		>
-			{item.title}
+			Hot Off the Press
 		</h2>
 
 		<!-- <div class="absolute inset-0 z-10 bg-black/70" /> -->
@@ -23,7 +23,7 @@
 	<div
 		class="bg-primary col-span-4 grid place-content-center rounded-md border-2 border-black p-3 px-16 transition-colors duration-300"
 	>
-		<p class="text-dark mb-3 text-3xl">Hot Off the Press</p>
+		<h1 class="text-dark mb-3 text-4xl">{item.title}</h1>
 		<div class="flex pb-2">
 			{#if item.links?.length}
 				{#each item.links as link}
