@@ -62,6 +62,9 @@ export async function getAllProjects() {
     title,
     description,
     slug,
+    image{
+      asset->    
+    },
     mainImage{
       asset->,
       alt,
