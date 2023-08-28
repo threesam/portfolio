@@ -61,12 +61,11 @@ export async function getAllProjects() {
     ...,
     title,
     description,
-    "slug": slug.current,
-    "image": {
-      "src": image.asset->url,
-      "alt": image.alt,
-      "caption": image.caption,
-      "color": image.asset->metadata.palette.lightVibrant.background,
+    slug,
+    mainImage{
+      asset->,
+      alt,
+      caption,
     },
   }`)
 }

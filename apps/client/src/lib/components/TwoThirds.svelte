@@ -7,9 +7,9 @@
 		>
 			To The Trees
 		</h2>
-		<!-- <div class="bg-gradient-radial absolute inset-0 z-10 from-black to-transparent" /> -->
+		<!-- <div class="absolute inset-0 z-10 bg-black/70" /> -->
 		<img
-			src="https://cdn.sanity.io/images/ppo5s5uj/production/b7e9e16daf62fac47b7e5d3e449c1094ec72733e-4096x2731.png?rect=756,0,2585,2731&w=1041&h=1100&fit=crop&auto=format"
+			src="https://cdn.sanity.io/images/qcht0vh1/production/86bb20026a64c782df97802fcc728710d0a61990-3584x2240.png"
 			class="absolute inset-0 h-full w-full object-cover"
 			alt="to the trees poster"
 		/>

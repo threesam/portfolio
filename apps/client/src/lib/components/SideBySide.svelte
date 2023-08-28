@@ -1,6 +1,6 @@
 <section class="grid grid-cols-12 gap-4 p-4">
 	<div
-		class="bg-dark hover:border-secondary relative col-span-6 aspect-square overflow-hidden rounded-md border-2 border-black transition-colors duration-300"
+		class="bg-dark relative col-span-6 aspect-square overflow-hidden rounded-md border-2 border-black transition-colors duration-300"
 	>
 		<div class="text-light absolute bottom-16 left-16 z-20">
 			<h2 class="text-light text-3xl">Art Killing Apathy</h2>
@@ -23,7 +23,7 @@
 	</div>
 
 	<div
-		class="hover:border-secondary relative col-span-6 aspect-square overflow-hidden rounded-md border-2 border-black transition-colors duration-300"
+		class="relative col-span-6 aspect-square overflow-hidden rounded-md border-2 border-black transition-colors duration-300"
 	>
 		<div class="text-light absolute bottom-16 left-16 z-20">
 			<h2 class="text-light text-3xl">Hard Road of Hope</h2>

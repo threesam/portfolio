@@ -41,3 +41,7 @@ h5,
 h6 {
 	@apply font-display text-dark mb-3;
 }
+
+img {
+	@apply grayscale;
+}
