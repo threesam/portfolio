@@ -1,4 +1,17 @@
-<footer class="bg-secondary text-dark py-32">
+<script>
+	import { page } from '$app/stores'
+	console.log('page: ', $page)
+
+	const obj = {
+		sights: '#F76919',
+		sites: '#F79E19',
+		sounds: '#049786'
+	}
+
+	$: primary = obj[$page.route.id.substring(1) ?? 'sites']
+</script>
+
+<footer style="background-color: {primary}" class=" text-dark py-32 transition-colors duration-300">
 	<div class="mx-auto grid max-w-7xl grid-cols-6">
 		<div class="col-span-1">
 			<h3 class="font-bold">work</h3>

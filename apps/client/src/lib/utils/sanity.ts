@@ -15,6 +15,33 @@ export function urlFor(source: string) {
 	return builder.image(source)
 }
 
+export async function getCatalog({ handle }: { handle: string }) {
+	return await client.fetch(
+		`*[_type == "catalog" && handle.current == $handle][0]{
+    ...,
+    title,
+    description,
+    handle,
+    images[]{
+      asset->    
+    }
+  }`,
+		{ handle }
+	)
+}
+
+export async function getAllCatalogs() {
+	return await client.fetch(`*[_type == "catalog"]{
+    ...,
+    title,
+    description,
+    handle,
+    images[]{
+      asset->    
+    },
+  }`)
+}
+
 export async function getProject({ handle }: { handle: string }) {
 	return await client.fetch(
 		`*[_type == "project" && slug.current == $handle][0]{
