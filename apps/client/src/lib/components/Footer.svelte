@@ -1,6 +1,5 @@
 <script>
 	import { page } from '$app/stores'
-	console.log('page: ', $page)
 
 	const obj = {
 		sights: '#F76919',

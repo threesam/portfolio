@@ -1,5 +1,6 @@
 <script>
 	export let item
+	export let path = '/'
 </script>
 
 <section class="grid grid-cols-12 gap-4 p-4 pb-0">
@@ -40,7 +41,7 @@
 			{/if}
 			<a
 				class="mx-5 py-2 font-bold underline underline-offset-8 transition-all duration-150 hover:underline-offset-4"
-				href={'/post/' + item.handle.current}
+				href={path + item.handle.current}
 			>
 				case study
 			</a>

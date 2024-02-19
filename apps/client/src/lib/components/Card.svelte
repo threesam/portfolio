@@ -1,5 +1,6 @@
 <script>
 	export let item
+	export let path = '/'
 </script>
 
 <div
@@ -23,7 +24,7 @@
 			{/if}
 			<a
 				class="border-tertiary hover:text-tertiary mx-5 border-b-2 py-1 font-bold transition-colors duration-150 hover:border-transparent"
-				href={'/post/' + item.handle.current}
+				href={path + item.handle.current}
 			>
 				case study
 			</a>
